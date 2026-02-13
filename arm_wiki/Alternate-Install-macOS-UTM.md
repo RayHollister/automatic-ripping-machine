@@ -1,5 +1,13 @@
 # macOS with UTM (Docker)
 
+> [!CAUTION]
+> This installation method is not supported or maintained by the ARM Developers.
+> For full support and continued maintenance,
+> we recommend installing ARM via the supported [Docker Container](https://github.com/automatic-ripping-machine/automatic-ripping-machine/wiki/docker).
+> This installation method was developed for macOS users who cannot run Docker natively with USB passthrough.
+>
+> **Use at your own risk**
+
 This guide covers installing ARM using Docker inside an Ubuntu Server VM running on macOS via UTM. This approach is necessary because ARM requires Linux and direct USB device access, which macOS cannot provide natively.
 
 > **Important:** You must use UTM's **QEMU backend** (Emulate), not Apple Virtualization (Virtualize). Apple Virtualization does not support USB passthrough.
